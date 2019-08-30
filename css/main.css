@@ -97,7 +97,7 @@ textarea {
 
 /*Large Background Image*/
 html {
-    background: url(../img/bkgd2.jpg) no-repeat center center fixed;
+    background: url(../img/kili-bkgrnd.jpg) no-repeat center center fixed;
     background-size: cover;
     height: 100%;
    /* set height to 100% - these are important for allowing content to vertically align */
@@ -108,12 +108,38 @@ body {
     /* set height to 100% - these are important for allowing content to vertically align */
 }
 
+#heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#heading h1 {
+    color: darkblue;
+    font-family: 'Lobster', cursive;
+    font-weight: normal;
+    font-size: 5em;
+    padding: 0;
+    margin: 0 auto;
+}
+
+#heading h2 {
+    font-size: 2em;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: normal;
+    color: white;
+    padding: 5px;
+    margin: 0 auto;
+}
+
 .wrapper {
     /* set the display to flex and use the justify-content & align-items properties to center all child elements on the page */
     margin: 0;
     height: 100%;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -129,11 +155,12 @@ body {
     line-height: 1.5em;
     border-radius: 10px;
     padding: 0px 30px;
-    width: 300px;
+    width: 400px;
     height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid blue;
 }
 
 #content p span {
